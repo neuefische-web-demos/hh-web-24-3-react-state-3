@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './styles.css';
-import Movie from './components/Movie/index.js';
-import Form from './components/Form';
+import Movie from './components/Movie/Movie.js';
+import Form from './components/Form/Form.js';
 
 const initialMovieData = [
   {
