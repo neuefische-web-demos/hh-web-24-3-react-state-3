@@ -7,7 +7,7 @@ export default function Movie({ name, isLiked, id }) {
       <div className="movie__actions">
         <button
           onClick={() => {
-            console.log('ich toggle');
+            console.log('toggle Movie mit ID:', id);
           }}
           className="movie__button"
           type="button"
@@ -24,7 +24,7 @@ export default function Movie({ name, isLiked, id }) {
         </button>
         <button
           onClick={() => {
-            console.log('ichlösche');
+            console.log('lösche Movie mit ID', id);
           }}
           className="movie__button"
           type="button"
