@@ -1,6 +1,6 @@
 import './Form.css';
 
-export default function Form({ onAddMovie, onDeleteMovie }) {
+export default function Form() {
   function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -8,7 +8,6 @@ export default function Form({ onAddMovie, onDeleteMovie }) {
 
     console.log(data);
 
-    onAddMovie(data);
     event.target.reset();
     event.target.elements.name.focus();
   }
