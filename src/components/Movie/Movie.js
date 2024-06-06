@@ -22,6 +22,7 @@ export default function Movie({ name, isLiked, id }) {
             </span>
           )}
         </button>
+
         <button
           onClick={() => {
             console.log('lösche Movie mit ID', id);

@@ -4,9 +4,9 @@ export default function Form() {
   function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
+    const newMovie = Object.fromEntries(formData);
 
-    console.log(data);
+    console.log('The new Movie', newMovie);
 
     event.target.reset();
     event.target.elements.name.focus();
